@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      /* General Page Styling */
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Navigation Bar */
+.navbar{
+    background:#ff7f50;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 30px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#222;
+}
+
+/* Search Box */
+.search-box{
+    display:flex;
+}
+
+.search-box input{
+    padding:10px;
+    width:220px;
+    border:none;
+    border-radius:5px 0 0 5px;
+    outline:none;
+}
+
+.search-box button{
+    padding:10px 20px;
+    border:none;
+    background:#28a745;
+    color:white;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+}
+
+.search-box button:hover{
+    background:#218838;
+}
+
+/* Contact Section */
+.contact-container{
+    max-width:1000px;
+    margin:60px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+/* Social Media */
+.social-section{
+    flex:1;
+}
+
+.social-section h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.social-links a{
+    display:block;
+    text-decoration:none;
+    font-size:32px;
+    font-weight:bold;
+    margin:12px 0;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    transform:translateX(10px);
+}
+
+.linkedin{
+    color:#0077b5;
+}
+
+.instagram{
+    color:#e1306c;
+}
+
+.facebook{
+    color:#1877f2;
+}
+
+/* Contact Details Card */
+.contact-card{
+    flex:1;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#ff7f50;
+}
+
+.contact-card p{
+    font-size:20px;
+    margin:15px 0;
+    line-height:1.8;
+}
+
+.contact-card i{
+    color:#ff7f50;
+    margin-right:10px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .nav-links{
+        margin:10px 0;
+    }
+}
+
+/* Carousel Container */
+.carousel{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* Carousel Images */
+.carousel img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    transition:0.4s ease;
+}
+
+/* Hover Effect */
+.carousel img:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:50px auto;
+    flex-wrap:wrap;
+}
+
+.info-card,
+.service-card{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.info-card:hover,
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.info-card h3,
+.service-card h3{
+    text-align:center;
+    font-size:30px;
+    font-family:'Trebuchet MS', sans-serif;
+    color:#ff7f50;
+    margin-bottom:20px;
+}
+
+.info-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.info-card li,
+.service-card p{
+    font-size:22px;
+    font-family:'Segoe UI', sans-serif;
+    margin:18px 0;
+    color:#333;
+}
+
+.info-card{
+    border-top:6px solid #ff7f50;
+}
+
+.service-card{
+    border-top:6px solid #28a745;
+}
+
+    </style>
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="font-style:italic;background-color:coral;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">GoldenPlaza</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link activa" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsanabout.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsancontact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsanproducts.html">Products</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="contact-container">
+
+    <div class="social-section">
+        <h2>FOLLOW US ON</h2>
+
+        <div class="social-links">
+            <a href="#" class="linkedin">LinkedIn - GoldenPlaza</a><br>
+            <a href="#" class="instagram">Instagram - GoldenPlaza</a><br>
+            <a href="#" class="facebook">Facebook - GoldenPlaza</a><br>
+        </div>
+    </div>
+
+    <div class="contact-card" style="text-align: center;padding-top: 20px;">
+        <h2>Contact Us</h2>
+
+        <p>📧 Email: GoldenPlaza@gmail.com</p>
+        <p>📞 Phone: +91 98765*****</p>
+        <p>📍 Address: 123 Main Street, Virudhunagar, Tamil Nadu</p>
+    </div>
+
+</div>
+
+<div class="carousel">
+  <img src="https://media.istockphoto.com/photos/gift-basket-on-gray-background-picture-id1169632374?k=20&m=1169632374&s=612x612&w=0&h=PjN-bVLOYsLg11Bq0DNzE-zrk6hZyejxdEB7Hq4ObvY=">
+  <img src="https://www.alibabaprinting.sg/wp-content/uploads/custom-coffee-mugs-with-pictures-1.jpg">
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/027/908/951/small_2x/chromatic-gift-brilliantly-wrapped-box-with-ribbon-generative-ai-photo.jpg">
+</div>
+
+<div class="cards-container">
+
+    <div class="info-card">
+        <h3>Why Choose Golden Plaza?</h3>
+        <ul>
+            <li>✨ High Quality Gifts</li>
+            <li>💰 Affordable Prices</li>
+            <li>🚚 Fast Delivery</li>
+            <li>🎁 Personalized Products</li>
+        </ul>
+    </div>
+
+    <div class="service-card">
+        <h3>Our Services</h3>
+        <p>🎀 Gift Wrapping</p>
+        <p>🏠 Home Delivery</p>
+        <p>🖌️ Customized Gifts</p>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

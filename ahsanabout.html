@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Body */
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    background:wheat;
+}
+
+/* Navbar */
+.navbar{
+    background:linear-gradient(rgb(163, 37, 58),);
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#222;
+}
+
+/* About Heading */
+.about-title{
+    text-align:center;
+    margin-top:30px;
+    font-size:42px;
+    color:#333;
+    font-weight:bold;
+}
+
+/* About Content Box */
+.about-box{
+    width:85%;
+    margin:30px auto;
+    padding:50px;
+    background:white;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.about-box p{
+    font-size:22px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* Highlight Golden Plaza */
+.about-box span{
+    color:white;
+    font-weight:bold;
+}
+
+/* Image Gallery */
+.gallery{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Search Box */
+.search-box input{
+    padding:10px;
+    width:220px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.search-box button{
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.search-box button:hover{
+    background:#218838;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .about-title{
+        font-size:32px;
+    }
+
+    .about-box{
+        width:95%;
+        padding:25px;
+    }
+
+    .about-box p{
+        font-size:18px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="font-style:italic;background-color:coral;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">GoldenPlaza</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link activa" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsanabout.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsancontact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ahsanproducts.html">Products</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- As a link -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-style: italic;">About</a>
+  </div>
+</nav>
+
+<!-- As a heading -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1" style="color:rebeccapurple; text-align: center ;background-color:cadetblue; padding: 100px;border-radius:50px;" >
+        <pre>Welcome to our Golden Plaza, your destination for thoughtful and memorable gifts for every occasion.
+             We offer a carefully curated collection of unique, personalized,and high-quality gift items designed
+             to bring joy to your loved ones. Whether you are celebrating a birthday, anniversary, wedding, festival,
+             or any special moment,we have something perfect for everyone. Our goal is to make gift-giving simple, 
+             meaningful, and enjoyable through products that reflect love, appreciation,and happiness.
+            Thank you for choosing us to be a part of your special celebrations and cherished moments.</pre></span>   
+  </div>
+</nav>
+
+<h1 class="about-title">About Golden Plaza</h1>
+
+<div class="about-box">
+    <p>
+        Welcome to Golden Plaza, your destination for thoughtful
+        and memorable gifts for every occasion. We offer a carefully curated
+        collection of unique and personalized products designed to bring joy
+        to your loved ones.
+    </p>
+</div>
+
+<div class="gallery">
+    <img src="https://singaporebullionmarket.com/wp-content/uploads/2023/12/GOLDEN-PLAZA-JEWELLERY-PTE.-LTD.webp" height="500px" width="500px" alt="Golden Plaza">
+    <img src="https://img.magnific.com/premium-photo/gift-shop-sign-close-up_259348-15972.jpg?w=2000" height="400px" width="400px" alt="Gift Collection">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.cqRAw1bhpKR6KtQ6LN6SegHaEy?rs=1&pid=ImgDetMain&o=7&rm=3" height="400px" width="400px" alt="Store Logo">
+</div>
+
+
+</body>
+</html>
